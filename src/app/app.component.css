@@ -1,0 +1,7 @@
+main {
+    background-color: var(--clr-primary-yellow);
+    padding: 1em;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}

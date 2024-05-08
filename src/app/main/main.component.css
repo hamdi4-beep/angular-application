@@ -1,0 +1,36 @@
+.article-image img {
+    border-radius: 1rem;
+}
+
+.article-tag {
+    display: inline-block;
+    background-color: var(--clr-primary-yellow);
+    padding: .3rem .5em;
+    margin-block: 1em;
+    border-radius: .2rem;
+}
+
+.article-date {
+    margin-bottom: 1em;
+}
+
+.article-content {
+    padding-block: 1em;
+    color: var(--clr-neutral-grey);
+}
+
+.avatar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5em;
+}
+
+.avatar-image img {
+    width: 2rem;
+}
+
+.avatar-name,
+.article-tag {
+    font-weight: bold;
+}

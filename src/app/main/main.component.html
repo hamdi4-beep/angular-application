@@ -1,0 +1,24 @@
+<div class="article-image">
+    <img src="./assets/images/illustration-article.svg" alt="">
+</div>
+
+<span class="article-tag">Learning</span>
+<p class="article-date">Published 21 Dec 2023</p>
+<h3 class="article-title">HTML & CSS foundations</h3>
+<p class="article-content">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+<div *ngIf="!isEmpty(user)" class="avatar-wrapper">
+    <div class="avatar-image">
+        <img [src]="user.avatar_url" alt="user's avatar image">
+    </div>
+
+    <p class="avatar-name">
+        <a
+            routerLink="/user"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            {{user.name}}
+        </a>
+    </p>
+</div>

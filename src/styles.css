@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-primary-yellow: hsl(47, 88%, 63%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grey: hsl(0, 0%, 50%);
+    --clr-neutral-black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: Figtree;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
