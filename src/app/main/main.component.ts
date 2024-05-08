@@ -16,27 +16,14 @@ export class MainComponent {
     avatar_url: ''
   }
 
-  sequence = new Observable((observer: Observer<{
-    name: string
-    avatar_url: string
-  }>) => {
-    (async () => {
-      const res = await fetch('http://api.github.com/users/hamdi4-beep')
-      observer.next(await res.json())
-    })()
-  })
+  sequence = new Observable((observer: Observer<string>) => observer.next('hamdi4-beep'))
 
   constructor() {
     const {sequence} = this
 
-    sequence.subscribe(({
-      name,
-      avatar_url
-    }) => {
-      this.user = {
-        name,
-        avatar_url
-      }
+    sequence.subscribe(async username => {
+      const res = await fetch(`http://api.github.com/users/${username}`)
+      this.user = await res.json()
     })
   }
 
